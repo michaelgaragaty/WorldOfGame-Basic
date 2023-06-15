@@ -1,0 +1,9 @@
+version: '3'
+services:
+  wog-score:
+    build: .
+    image: michaelgaragaty/wog-score
+    ports:
+      - '8777:5000'
+    volumes:
+      - ${PWD}/Scores.txt:/app/Scores.txt

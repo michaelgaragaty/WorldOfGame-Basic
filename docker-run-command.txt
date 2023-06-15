@@ -1,0 +1,2 @@
+docker build -t wog-score .
+docker run -d --name wog-score -v "$(pwd)/Scores.txt:/app/Scores.txt" -p 5000:5000 wog-score
